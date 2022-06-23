@@ -1,0 +1,6 @@
+@import "../../../assets/styles/_button.scss";
+
+.btn {
+  @include button-bg(red);
+  
+}
