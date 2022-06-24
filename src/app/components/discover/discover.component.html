@@ -1,1 +1,25 @@
-<p>discover works!</p>
+<div class="bg-white p-3 space-y-3">
+  <div>
+    <h1>DISCOVER MORE OF WHAT MATTERS TO YOU</h1>
+  </div>
+  <div class="flex flex-wrap gap-3">
+    <span
+      *ngFor="let topic of topics"
+      class="flex py-1 px-2 rounded-md bg-white border-2 border-slate-100 text-sm font-normal text-gray-600 hover:border-slate-400 transition duration-200 cursor-pointer"
+    >
+      {{ topic.name }}
+    </span>
+  </div>
+  <hr />
+  <ul class="flex flex-wrap gap-3 text-xs cursor-pointer text-gray-600">
+    <li class="hover:underline transition duration-150">Help</li>
+    <li class="hover:underline transition duration-150">Status</li>
+    <li class="hover:underline transition duration-150">Writers</li>
+    <li class="hover:underline transition duration-150">Blog</li>
+    <li class="hover:underline transition duration-150">Careers</li>
+    <li class="hover:underline transition duration-150">Privacy</li>
+    <li class="hover:underline transition duration-150">Terms</li>
+    <li class="hover:underline transition duration-150">About</li>
+    <li class="hover:underline transition duration-150">Knowable</li>
+  </ul>
+</div>
